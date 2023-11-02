@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+	targetNamespace="http://www.airlines.com/Reservation" 
+	xmlns:tns="http://www.airlines.com/Reservation" elementFormDefault="qualified">
+	
+	<include schemaLocation="common.xsd"></include>
+	<complexType name="flight">
+		<sequence>
+			<element name="flightNumber" type="tns:stringMax20"/>
+			<element name="operatingAirlines" type="tns:operatingAirlines"/>
+			<element name="arrivalCity" type="tns:stringMax20"/>
+			<element name="dateOfDepature" type="date"/>
+			<element name="estimatedDepatureTime" type="time"/>
+		</sequence>
+	</complexType>
+	
+	
+	<simpleType name="operatingAirlines">
+		<restriction base="string">
+			<enumeration value="India"></enumeration>
+			<enumeration value="USA"></enumeration>
+			<enumeration value="Russia"></enumeration>
+			<enumeration value="France"></enumeration>
+			<enumeration value="Australia"></enumeration>
+			<enumeration value="Ireland"></enumeration>
+			<enumeration value="Japan"></enumeration>
+		</restriction>
+	</simpleType>
+	
+</schema>

@@ -1,0 +1,16 @@
+module demoImport{
+    prefix "demoImport";
+    namespace "http://com/demo/demoImport";
+
+    grouping vrf{
+        leaf name{
+            type string;
+        }
+        leaf rd {
+            type uint32;
+        }
+        leaf rt-import{
+            type uint32;
+        }
+    }
+}

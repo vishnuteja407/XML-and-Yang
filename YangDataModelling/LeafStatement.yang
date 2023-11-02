@@ -1,0 +1,13 @@
+leaf host-name {
+	type string;
+	mandatory true;
+	config true;
+	description "Hostname for this system";
+}
+
+leaf cpu-temp {
+	type int32;
+	units degrees-celsius;
+	config false;
+	description "Current temperature in CPU";
+}

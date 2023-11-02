@@ -1,0 +1,9 @@
+container system {
+	container services {
+		container ssh {
+			presence "Enables SSH";
+			description "SSH service specific configuration";
+			// more leafs, containers and other things here...
+		}
+	}
+}

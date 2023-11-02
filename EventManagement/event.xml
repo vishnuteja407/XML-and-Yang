@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:event id="123456" xmlns:tns="http://www.eventmanagement.com/event" xmlns:tns1="http://www.eventmanagement.com/common" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.eventmanagement.com/event event.xsd ">
+  <tns:name>tns:name</tns:name>
+  <tns:description>tns:description</tns:description>
+  <tns:ticketPrice>0.0</tns:ticketPrice>
+  <tns:startTime>2001-12-31T12:00:00</tns:startTime>
+  <tns:endTime>2001-12-31T12:00:00</tns:endTime>
+  <tns:organizer id="123456">
+    <tns:name>tns:name</tns:name>
+    <tns:email>orga@org.com</tns:email>
+    <tns:phone>1234567890</tns:phone>
+  </tns:organizer>
+  <tns:venue id="123456">
+    <tns:name>tns:name</tns:name>
+    <tns:street>tns:street</tns:street>
+    <tns:city>tns:city</tns:city>
+    <tns:state>tns:state</tns:state>
+    <tns:country>tns:country</tns:country>
+    <tns:zipcode>tns:zipcode</tns:zipcode>
+  </tns:venue>
+  <tns:participant id="123456">
+    <tns:name>John</tns:name>
+    <tns:email>a@b.com</tns:email>
+    <tns:phone>1235767890</tns:phone>
+  </tns:participant>
+  <tns:participant id="123456">
+    <tns:name>Joe</tns:name>
+    <tns:email>d@q.com</tns:email>
+    <tns:phone>1234657541</tns:phone>
+  </tns:participant>
+  <tns:participant id="123456">
+    <tns:name>Jack</tns:name>
+    <tns:email>qw@s.com</tns:email>
+    <tns:phone>1232123454</tns:phone>
+  </tns:participant>
+</tns:event>

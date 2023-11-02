@@ -1,0 +1,1 @@
+doc("Books.xml")/books/book[price<40]

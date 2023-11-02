@@ -1,0 +1,13 @@
+submodule acme-system {
+	belongs-to acme-module {
+		prefix acme;
+	}
+	
+	import "ietf-yang-types" {
+		prefix yang;
+	}
+	
+	container system {
+	
+	}
+}

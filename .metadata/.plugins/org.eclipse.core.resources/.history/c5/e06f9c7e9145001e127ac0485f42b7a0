@@ -1,0 +1,16 @@
+list user {
+	key name;
+	leaf name {
+		type string;
+	}
+	leaf uid {
+		type uint32;
+	}
+	leaf full-name{
+		type string;
+	}
+	lead class {
+		type string;
+		default viewer;
+	}
+}

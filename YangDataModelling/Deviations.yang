@@ -1,0 +1,11 @@
+deviation /base:system/base:user/base:table {
+	deviate add {
+		default "admin"; // new user are "admin" by default
+	}
+}
+
+deviation /base:system/base:name-server {
+	deviate replace {
+		max-elements 3;
+	}
+}

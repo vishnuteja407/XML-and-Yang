@@ -1,0 +1,14 @@
+rpc activate-software-image {
+	input {
+		leaf image {
+			type binary;
+		}
+	}
+	output {
+		leaf status {
+			type string;
+		}
+	}
+}
+
+// admin actions with input and output parameters

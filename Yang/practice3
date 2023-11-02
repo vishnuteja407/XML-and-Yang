@@ -1,0 +1,6 @@
+sub-module submodule1{
+    belongs-to acme-box{
+        prefix acme-box;
+    }
+
+}

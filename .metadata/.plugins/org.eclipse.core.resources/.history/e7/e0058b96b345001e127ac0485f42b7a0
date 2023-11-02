@@ -1,0 +1,5 @@
+augument /sys:system/sys:user {
+	leaf expire {
+		type yang:date-and-time;
+	}
+}

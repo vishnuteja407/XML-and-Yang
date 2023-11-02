@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+	targetNamespace="http://www.airlines.com/Reservation" 
+	xmlns:tns="http://www.airlines.com/Reservation" elementFormDefault="qualified">
+	
+	<simpleType name="stringMax20">
+		<restriction base="string">
+			<maxLength value="20"></maxLength>
+		</restriction>
+	</simpleType>
+	
+</schema>

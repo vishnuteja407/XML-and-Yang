@@ -1,0 +1,15 @@
+grouping target {
+	lead address{
+		type inet:ipaddress;
+		description "Target IP";
+	}
+	leaf port {
+		type inet:port-number;
+		description "Target port number";
+	}
+}
+container peer {
+	container destination {
+		uses target;
+	}
+}

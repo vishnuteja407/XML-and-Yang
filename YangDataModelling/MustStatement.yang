@@ -1,0 +1,48 @@
+container timeout {
+	leaf access-timeout {
+		description "Maximum time without server response";
+		units seconds;
+		mandatory true;
+		type uint32;
+	}
+	
+	leaf retry-timer {
+		description "Period to retry operation";
+		units seconds;
+		type uint32;
+		must "current() < ../access-timeout" {
+			error-app-tag retry-timer-invalid;
+			error-message "The retry timer must be " 
+			             + "less than the access timeout";
+		}
+	}
+}
+
+
+
+
+
+leaf interface-group-name {
+	type string {
+		length "1..31";
+		pattern "[a-zA-Z][a-zA-Z0-9_-]*";
+	}
+	must "not(/sys:sys/interface[name = current()])" {
+		error-message "Must be different from all interface names";
+		tailf:dependency "/sys:sys/interface/name";
+	}
+}
+
+
+
+
+leaf max-weight {
+	type uint32 {
+		range "0..1000";
+	}
+	default 100;
+	
+	must "sum(/sys:sys/interface[enabled = "true"]/weight) < current()" {
+		error-message "The total weight exceeds the cpnfigured max weight";
+	}
+}

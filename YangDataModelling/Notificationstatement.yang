@@ -1,0 +1,10 @@
+notification config-change {
+	description "The configuration changed";
+	leaf operator-name {
+		type string;
+	}
+	
+	leaf-list change {
+		type instance-identifier;
+	}
+}

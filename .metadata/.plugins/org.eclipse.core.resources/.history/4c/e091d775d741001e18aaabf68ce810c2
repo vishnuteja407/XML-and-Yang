@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<?xml version="1.0" encoding="UTF-8"?>
+	<ul>
+		<li><title>Get Certified in .Net</title></li>
+		<li><title>Master Core Java</title></li>
+		<li><title lang="en">XML and XML Schema Definition in
+				easy steps</title></li>
+		<li><title lang="en">XSLT XPATH and XQuery Fundamentals</title></li>
+	</ul>
+</body>
+</html>

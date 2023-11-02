@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:Patient xmlns:tns="http://www.vishnuteja407.com/Patient" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.vishnuteja407.com/Patient Patient.xsd " id="1">
+  <tns:name>Vishnu</tns:name>
+  <tns:age>29</tns:age>
+  <tns:email>vishnuteja407@gmail.com</tns:email>
+  <tns:gender>M</tns:gender>
+  <tns:phone>1234567809</tns:phone>
+  <tns:paymentType>
+    <tns:cash>8000</tns:cash>
+  </tns:paymentType>
+</tns:Patient>

@@ -1,0 +1,7 @@
+leaf-list domain-search {
+	type string;
+	ordered-by user;
+	description "List of domain names to search";
+}
+
+// holds multiple values of a particular type

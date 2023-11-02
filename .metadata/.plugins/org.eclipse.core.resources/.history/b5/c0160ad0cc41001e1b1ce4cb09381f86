@@ -1,0 +1,95 @@
+<html>
+    <body>
+        <h1>Event Information:</h1>
+        	
+        <div>
+			Id:
+			123</div>
+        	
+        <div>
+			Name:
+			Gaming</div>
+        	
+        <div>
+			Description:
+			Play Super Cool Games</div>
+        	
+        <div>
+			Price:
+			50</div>
+        	
+        <div>
+			Start Time:
+			10:00:00</div>
+        	
+        <div>
+			End Time:
+			11:00:00</div>
+        	
+		
+        <div>
+			Id:
+			456</div>
+        		
+        <div>
+			Name:
+			John</div>
+        		john@gmail.com
+		0123456789
+	
+	
+		
+        <div>
+			Id:
+			789</div>
+        		
+        <div>
+			Name:
+			KOP Mall</div>
+        		Mall St
+		King Of Prussia
+		PA
+		USA
+		19406
+	
+	
+		
+			
+        <div>
+			Id:
+			1</div>
+        			
+        <div>
+			Name:
+			Bob</div>
+        			bob@bob.com
+			0123456789
+		
+		
+			
+        <div>
+			Id:
+			2</div>
+        			
+        <div>
+			Name:
+			Ahmad</div>
+        			ahmad@ahmad.com
+			0123456789
+		
+		
+			
+        <div>
+			Id:
+			3</div>
+        			
+        <div>
+			Name:
+			Bharath</div>
+        			bharath@bharath.com
+			0123456789
+		
+	
+
+    </body>
+</html>

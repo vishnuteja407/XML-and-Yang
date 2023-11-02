@@ -1,0 +1,56 @@
+container rip {
+	list network-ifname {
+		key ifname;
+		
+		leaf ifname {
+			type leafref {
+				path "/interface/name";
+			}
+		}
+	}
+}
+
+// HERE THE RIP ROUTING SUBSYSTEM HAS A LIST OF LEAFREFS POINTING OUT EXISTING INTERFACES
+
+
+
+container video {
+	leaf v-ip {
+		type leafref {
+			path "/client/ip";
+		}
+	}
+	
+	leaf v-port {
+		type leafref {
+			path "/client[ip=current()/../v-ip]/port";
+		}
+	}
+	leaf v-stream {
+		type leafref {
+			path "/client/[ip=current()/../v-ip][port=current()/../v-port]/stream"
+		}
+	}
+}
+
+
+//Deref() XPATH operator
+
+container video {
+	leaf v-ip {
+		type leafref {
+			path "/client/ip";
+		}
+	}
+	
+	leaf v-port {
+		type leafref {
+			path "deref(../v-ip)/../port";
+		}
+	}
+	leaf v-stream {
+		type leafref {
+			path "deref(../v-port)/../stream"
+		}
+	}
+}

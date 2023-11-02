@@ -1,0 +1,43 @@
+module acme-box {
+    yang-version 1.1;
+    namespace "http://com/package1/router";
+    prefix "gatewayRouter";
+
+    // revision statements
+    // import and include statements
+
+    import demoImport {
+        prefix demoimport;
+    }
+
+    include submodule1;
+
+    container properties {
+        leaf name {
+            tailf: info "router name";
+            type string;
+        }
+    }
+
+    container interfaces {
+        presense "interfaces elements";
+        
+        uses demoimport:vrf;
+
+        list interface {
+            key "name";
+            leaf name {
+                type string {
+                    pattern "*Ethernet";
+                };
+            }
+            leaf oper-state{
+                config false;
+                type enumeration {
+                    enum UP;
+                    enum DOWN;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;PatientSchema/Patient.xml&apos; to &apos;Patient_old.xml&apos;" description="Rename resource &apos;Patient.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Patient.xml" name="Patient_old.xml" stamp="1692008591565" updateReferences="true"/>
+</session>

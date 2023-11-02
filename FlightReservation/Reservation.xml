@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:reservation xmlns:tns="http://www.airlines.com/Reservation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.airlines.com/Reservation Reservation.xsd ">
+  <tns:flight>
+    <tns:flightNumber>tns:flightNumber</tns:flightNumber>
+    <tns:operatingAirlines>USA</tns:operatingAirlines>
+    <tns:arrivalCity>tns:arrivalCity</tns:arrivalCity>
+    <tns:dateOfDepature>2001-01-01</tns:dateOfDepature>
+    <tns:estimatedDepatureTime>12:00:00</tns:estimatedDepatureTime>
+  </tns:flight>
+  <tns:passenger>
+    <tns:lastName>tns:lastName</tns:lastName>
+    <tns:firstName>tns:firstName</tns:firstName>
+    <tns:middleName>tns:middleName</tns:middleName>
+    <tns:email>mail@mail.com</tns:email>
+    <tns:phone>1234567890</tns:phone>
+  </tns:passenger>
+</tns:reservation>

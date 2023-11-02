@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0"
+	xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+	<xsl:template match="/">
+		<html>
+			<body>
+				<h1>Event Information:</h1>
+
+
+			</body>
+		</html>
+	</xsl:template>
+	<xsl:template match="id">
+		<div>
+			Id:
+			<xsl:value-of select="." />
+		</div>
+	</xsl:template>
+	<xsl:template match="name">
+		<div>
+			Name:
+			<xsl:value-of select="." />
+		</div>
+	</xsl:template>
+	<xsl:template match="description">
+		<div>
+			Description:
+			<xsl:value-of select="." />
+		</div>
+	</xsl:template>
+	<xsl:template match="price">
+		<div>
+			Price:
+			<xsl:value-of select="." />
+		</div>
+	</xsl:template>
+	<xsl:template match="startTime">
+		<div>
+			Start Time:
+			<xsl:value-of select="." />
+		</div>
+	</xsl:template>
+	<xsl:template match="endTime">
+		<div>
+			End Time:
+			<xsl:value-of select="." />
+		</div>
+	</xsl:template>
+
+</xsl:stylesheet>

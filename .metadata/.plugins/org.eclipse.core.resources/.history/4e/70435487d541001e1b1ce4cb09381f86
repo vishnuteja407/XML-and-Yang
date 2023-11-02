@@ -1,0 +1,6 @@
+(: doc("Books.xml")/books/book[price<40]/title :)
+
+for $x in doc("Books.xml")/books/book
+where $x/price<40
+order by $x/title
+return $x/title

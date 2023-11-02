@@ -1,0 +1,18 @@
+module acme-module {
+
+	namespace "http://acme.example.com/module";
+	prefix acme;
+	
+	import "ietf-yang-types" { 
+		prefix yang;
+	}
+	
+	include "acme-system";
+	
+	organization "ACME Inc.";
+	contact joe@acme.example.com;
+	description "Module describing the ACME products";
+	revision 2007-06-09 {
+		description "Initial revision.";
+	}
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:Patient xmlns:tns="http://www.vishnuteja407.com/Patient" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.vishnuteja407.com/Patient Patient.xsd ">
+  <tns:name>VishnuTeja</tns:name>
+  <tns:age>29</tns:age>
+  <!--<tns:email>vishnuteja407@gmail.com</tns:email>  -->
+  <tns:gender>M</tns:gender>
+  <tns:phone>1234567890</tns:phone>
+  <tns:phone>1234567990</tns:phone>
+  <tns:paymentType>
+  	 <tns:insurance>
+  	 	<tns:limit>10000</tns:limit>
+  	 	<tns:provider>Vidal Health Care</tns:provider>
+  	 </tns:insurance>
+  </tns:paymentType>
+</tns:Patient>

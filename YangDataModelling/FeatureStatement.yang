@@ -1,0 +1,13 @@
+feature has-local-disk {
+	description "System has local file that can be used for storing log files";
+}
+
+container system {
+	container logging {
+		if-feature has-local-disk;
+		presence "Logging enabled";
+		leaf buffer-size {
+			type filesize;
+		}
+	}
+}
